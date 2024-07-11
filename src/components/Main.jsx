@@ -1,7 +1,7 @@
-export default function Main() {
+export default function Main({ data }) {
   return (
     <div className="imgContainer">
-      <img src="mars.webp" alt="" className="bgImage" />
+      <img src={data?.hdurl} alt={data?.title} className="bgImage" />
     </div>
   );
 }

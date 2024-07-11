@@ -1,10 +1,10 @@
-export default function Footer({ handleToggleModal }) {
+export default function Footer({ handleToggleModal, data }) {
   return (
     <footer>
       <div className="bgGradient"></div>
       <div>
-        <h2>The Brutal Martian Landscape</h2>
-        <h3>APOD Project</h3>
+        <h2>{data?.title}</h2>
+        <h3>{data?.copyright}</h3>
       </div>
       <button onClick={handleToggleModal}>
         <i className="fa-solid fa-circle-info"></i>
